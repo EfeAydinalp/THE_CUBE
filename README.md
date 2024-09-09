@@ -111,7 +111,7 @@ This project involves the integration of an MPU6050 sensor with an STM32F407G-DI
 
 ### Usage:
 
-1. Connect the hardware as described in the [References](#Hardware Setup) section.
+1. Connect the hardware as described in the [Hardware Setup](#hardware-setup) section.
 
 2. Run the Python script:
    ```bash
