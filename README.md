@@ -27,6 +27,11 @@ This project showcases a real-time 3D simulation of a rotating cube, driven by d
 This project involves the integration of an MPU6050 sensor with an STM32F407G-DISC1 microcontroller to gather real-time motion data (gyroscope and accelerometer readings). The data is processed and transmitted via UART to a Python script, which then updates a 3D cube's orientation in real time. The primary goal is to visualize the sensor's orientation and motion in a clear and interactive manner.
 
 ## Hardware Setup
+![Harware00](https://github.com/user-attachments/assets/10839f08-cc5a-43b4-ba83-f95b14b99010)
+![Harware01](https://github.com/user-attachments/assets/808e8092-6a30-486e-be6a-8781550b9f74)
+![Harware10](https://github.com/user-attachments/assets/c4184817-8ad2-41ba-af5b-ab44c1002a90)
+![Harware11](https://github.com/user-attachments/assets/d31ae237-c961-4086-a7f1-2c28e26264c3)
+
 
 ### Components:
 
@@ -112,12 +117,14 @@ This project involves the integration of an MPU6050 sensor with an STM32F407G-DI
 ### Usage:
 
 1. Connect the hardware as described in the [Hardware Setup](#hardware-setup) section.
+  
+2. Open STM32CubeIDE, Do your configuration(if you are using STM32F407G-D1 I already uploaded .ioc file) create your mpu6050.c mpu6050.h files which you can find in Core section of this repo and set your main.c file. After did all these debug and run, if you did everything correct discovery board should get data from sensor, start filter it and start sending data with uart.
 
-2. Run the Python script:
+3. Run the Python script while Stm32cubeIDE still running(sending data with uart):
    ```bash
    python THE_CUBE.py
    ```
-3. The simulation window will open, displaying a cube whose orientation corresponds to the real-time data from the MPU6050 sensor.
+4. The simulation window will open, displaying a cube whose orientation corresponds to the real-time data from the MPU6050 sensor.
 
 ### Calibration and Filtering:
 
