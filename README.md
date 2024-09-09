@@ -120,11 +120,14 @@ This project involves the integration of an MPU6050 sensor with an STM32F407G-DI
   
 2. Open STM32CubeIDE, Do your configuration(if you are using STM32F407G-D1 I already uploaded .ioc file) create your mpu6050.c mpu6050.h files which you can find in Core section of this repo and set your main.c file. After did all these debug and run, if you did everything correct discovery board should get data from sensor, start filter it and start sending data with uart.
 
-3. Run the Python script while Stm32cubeIDE still running(sending data with uart):
+3.Check the python code and do configurations like changing your COMX port and baudrate if needed.
+
+
+4. Run the Python script while Stm32cubeIDE still running(sending data with uart):
    ```bash
    python THE_CUBE.py
    ```
-4. The simulation window will open, displaying a cube whose orientation corresponds to the real-time data from the MPU6050 sensor.
+5. The simulation window will open, displaying a cube whose orientation corresponds to the real-time data from the MPU6050 sensor.
 
 ### Calibration and Filtering:
 
