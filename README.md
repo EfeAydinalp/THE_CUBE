@@ -45,7 +45,7 @@ This project involves the integration of an MPU6050 sensor with an STM32F407G-DI
 - **MPU6050 to STM32F407G-DISC1:**
   - `SDA` (Data) -> `PB9`
   - `SCL` (Clock) -> `PB6`
-  - `VCC` -> `3.3V`
+  - `VCC` -> `5 V`
   - `GND` -> `GND`
 
 - **STM32F407G-DISC1 to Computer:**
