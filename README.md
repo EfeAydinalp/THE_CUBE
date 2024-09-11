@@ -63,7 +63,7 @@ This project involves the integration of an MPU6050 sensor with an STM32F407G-DI
      - Transmits processed data via UART.
 
 ### 2. **Python Script**:
-   - **File**: `THE_CUBE.py`
+   - **File**: `Simulation.py`
    - **Functionality**:
      - Receives UART data from the STM32.
      - Parses the data to extract pitch, roll, and yaw.
